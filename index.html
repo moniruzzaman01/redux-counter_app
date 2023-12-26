@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple counter application</title>
+    <!-- import tailwindcss from cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- import redux from cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="w-1/2 mx-auto flex flex-col h-screen justify-center">
+      <div
+        class="p-4 h-auto flex flex-col items-center justify-center space-y-5 bg-white rounded shadow"
+      >
+        <div id="counter" class="text-2xl font-semibold"></div>
+        <div class="flex space-x-3">
+          <button
+            id="increment"
+            class="bg-indigo-400 text-white px-3 py-2 rounded shadow"
+          >
+            Increment
+          </button>
+          <button
+            id="decrement"
+            class="bg-red-400 text-white px-3 py-2 rounded shadow"
+          >
+            Decrement
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
